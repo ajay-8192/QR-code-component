@@ -29,13 +29,17 @@
   letter-spacing: 0.2px;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: var(--slate-300);
   font-family: var(--outfit);
+  height: 100%;
 }
 
 .qr-code {
