@@ -1,0 +1,70 @@
+:root {
+  /* Color */
+  --slate-900: #1F314F;
+  --slate-500: #68778D;
+  --slate-300: #D5E1EF;
+  --white: #FFFFFF;
+  --large: 40px;
+  --medium: 24px;
+  --small: 16px;
+  --outfit: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+.outfit-bold {
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.outfit-regular {
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--slate-300);
+  font-family: var(--outfit);
+}
+
+.qr-code {
+  width: 320px;
+  background-color: var(--white);
+  padding: var(--small);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.qr-code img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.qr-code .content {
+  margin-top: var(--medium);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.content p:last-child {
+  color: var(--slate-500);
+}
+
+.content p:first-child {
+  font-weight: bold;
+  color: var(--slate-900);
+}
